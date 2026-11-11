@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Accesorios tecnológicos, periféricos, almacenamiento, cables y soluciones TI. Compra en Innovent Servicios TI."
+    >
+
+    <meta
+        name="keywords"
+        content="accesorios tecnológicos, computadores, mouse, teclado, audífonos, SSD, cables, Innovent Servicios TI, Cartagena"
+    >
+
+    <meta
+        name="author"
+        content="Innovent Servicios TI"
+    >
+
+    <title>
+        Accesorios Tecnológicos | Innovent Servicios TI
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/accesorios.css"
+    >
+    <link rel="stylesheet" href="/css/footer.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo.png" />
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <div class="logo"><a href="index.html">
+
+        <span>
+            INNOVENT SERVICIOS TI
+        </span>
+
+    </div></a>
+
+
+    <nav>
+
+        <a href="index.html">
+            Inicio
+        </a>
+
+        <a href="#categorias">
+            Categorías
+        </a>
+
+        <a href="#productos">
+            Productos
+        </a>
+
+        <a href="#beneficios">
+            Beneficios
+        </a>
+
+        <a href="#contacto">
+            Contacto
+        </a>
+
+    </nav>
+
+
+    <!-- CARRITO -->
+
+    <button
+        class="cart-button"
+        onclick="abrirCarrito()"
+        aria-label="Abrir carrito"
+    >
+
+        🛒
+
+        <span id="cartCount">
+            0
+        </span>
+
+    </button>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+
+            Accesorios que
+            <strong>
+                impulsan tu tecnología
+            </strong>
+
+        </h1>
+
+
+        <p>
+
+            Encuentra periféricos, almacenamiento,
+            accesorios para computadores, dispositivos
+            móviles y soluciones tecnológicas para tu
+            hogar, oficina o emprendimiento.
+
+        </p>
+
+
+        <div class="hero-actions">
+
+            <a
+                href="#productos"
+                class="hero-button"
+            >
+
+                Explorar catálogo
+
+            </a>
+
+
+            <a
+                href="https://wa.me/573012041255?text=Hola%20Innovent%20Servicios%20TI,%20quiero%20conocer%20los%20accesorios%20tecnológicos%20disponibles."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hero-whatsapp"
+            >
+
+                Consultar por WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- IMAGEN DE REFERENCIA -->
+
+    <div class="hero-image">
+
+        <img
+            src="https://cardinalcomputer.com/cdn/shop/collections/Accessories.webp?v=1732057616"
+            alt="Accesorios tecnológicos y periféricos de computador"
+            loading="eager"
+        >
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     BARRA DE CONFIANZA
+===================================================== -->
+
+<section class="trust-bar">
+
+    <div class="trust-item">
+
+        <span>
+            ✓
+        </span>
+
+        <div>
+
+            <strong>
+                Asesoría TI
+            </strong>
+
+            <small>
+                Te ayudamos a elegir
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <div class="trust-item">
+
+        <span>
+            ✓
+        </span>
+
+        <div>
+
+            <strong>
+                Compra segura
+            </strong>
+
+            <small>
+                Pedido confirmado por WhatsApp
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <div class="trust-item">
+
+        <span>
+            ✓
+        </span>
+
+        <div>
+
+            <strong>
+                Atención personalizada
+            </strong>
+
+            <small>
+                Innovent Servicios TI
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <div class="trust-item">
+
+        <span>
+            ✓
+        </span>
+
+        <div>
+
+            <strong>
+                Envíos
+            </strong>
+
+            <small>
+                Consulta cobertura
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CATEGORÍAS
+===================================================== -->
+
+<section
+    id="categorias"
+    class="categories"
+>
+
+    <div class="section-title">
+
+        <span>
+            EXPLORA
+        </span>
+
+        <h2>
+            Categorías tecnológicas
+        </h2>
+
+        <p>
+            Encuentra rápidamente el accesorio
+            que necesitas.
+        </p>
+
+    </div>
+
+
+    <div class="category-grid">
+
+
+        <!-- PERIFÉRICOS -->
+
+        <button
+            class="category-card"
+            onclick="filtrarProductos('perifericos')"
+        >
+
+            <img
+                src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/esupport/esupport-pages/products-without-service-tag.png?fmt=jpg&hei=600&wid=600"
+                alt="Teclados y mouse"
+                loading="lazy"
+            >
+
+            <div class="category-overlay">
+
+                <span>
+                    PERIFÉRICOS
+                </span>
+
+                <h3>
+                    Mouse y teclados
+                </h3>
+
+            </div>
+
+        </button>
+
+
+
+        <!-- AUDIO -->
+
+        <button
+            class="category-card"
+            onclick="filtrarProductos('audio')"
+        >
+
+            <img
+                src="https://cdn.mos.cms.futurecdn.net/DtjWC6YBE2TJmz5AX7SuBG.jpg"
+                alt="Audífonos y accesorios de audio"
+                loading="lazy"
+            >
+
+            <div class="category-overlay">
+
+                <span>
+                    AUDIO
+                </span>
+
+                <h3>
+                    Audífonos
+                </h3>
+
+            </div>
+
+        </button>
+
+
+
+        <!-- CABLES -->
+
+        <button
+            class="category-card"
+            onclick="filtrarProductos('cables')"
+        >
+
+            <img
+                src="https://njcomputerstt.com/cdn/shop/collections/360x360-miscellaneous-tech.png?v=1776198124"
+                alt="Cables USB y accesorios"
+                loading="lazy"
+            >
+
+            <div class="category-overlay">
+
+                <span>
+                    CONECTIVIDAD
+                </span>
+
+                <h3>
+                    Cables y adaptadores
+                </h3>
+
+            </div>
+
+        </button>
+
+
+
+        <!-- ALMACENAMIENTO -->
+
+        <button
+            class="category-card"
+            onclick="filtrarProductos('almacenamiento')"
+        >
+
+            <img
+                src="https://cdn.mos.cms.futurecdn.net/DtjWC6YBE2TJmz5AX7SuBG.jpg"
+                alt="Almacenamiento SSD"
+                loading="lazy"
+            >
+
+            <div class="category-overlay">
+
+                <span>
+                    ALMACENAMIENTO
+                </span>
+
+                <h3>
+                    SSD y memorias
+                </h3>
+
+            </div>
+
+        </button>
+
+
+
+        <!-- ENERGÍA -->
+
+        <button
+            class="category-card"
+            onclick="filtrarProductos('energia')"
+        >
+
+            <img
+                src="https://njcomputerstt.com/cdn/shop/collections/360x360-miscellaneous-tech.png?v=1776198124"
+                alt="Cargadores y accesorios de energía"
+                loading="lazy"
+            >
+
+            <div class="category-overlay">
+
+                <span>
+                    ENERGÍA
+                </span>
+
+                <h3>
+                    Cargadores
+                </h3>
+
+            </div>
+
+        </button>
+
+
+
+        <!-- MÓVIL -->
+
+        <button
+            class="category-card"
+            onclick="filtrarProductos('movil')"
+        >
+
+            <img
+                src="https://urbansupplyplus.com/cdn/shop/collections/ChatGPT_Image_Nov_30_2025_11_27_20_AM.png?v=1764522386"
+                alt="Accesorios para dispositivos móviles"
+                loading="lazy"
+            >
+
+            <div class="category-overlay">
+
+                <span>
+                    MÓVIL
+                </span>
+
+                <h3>
+                    Accesorios móviles
+                </h3>
+
+            </div>
+
+        </button>
+
+
+
+        <!-- TODOS -->
+
+        <button
+            class="category-card category-all"
+            onclick="filtrarProductos('todos')"
+        >
+
+            <div class="category-all-content">
+
+                <span>
+                    INNOVENT
+                </span>
+
+                <h3>
+                    Ver todo el catálogo
+                </h3>
+
+                <p>
+                    Explorar productos
+                </p>
+
+            </div>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PRODUCTOS
+===================================================== -->
+
+<section id="productos" class="products-section">
+
+    <div class="section-header">
+
+        <div>
+            <span>CATÁLOGO INNOVENT</span>
+
+            <h2>Accesorios tecnológicos</h2>
+
+            <p>
+                Productos seleccionados para
+                complementar tus equipos.
+            </p>
+        </div>
+
+        <div class="search-container">
+
+            <label
+                for="buscador"
+                class="sr-only"
+            >
+                Buscar producto
+            </label>
+
+            <input
+                type="search"
+                id="buscador"
+                placeholder="Buscar producto..."
+                autocomplete="off"
+                oninput="buscarProducto()"
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- FILTROS RÁPIDOS -->
+
+    <div class="quick-filters">
+
+        <button onclick="filtrarProductos('todos')">
+            Todos
+        </button>
+
+        <button onclick="filtrarProductos('perifericos')">
+            Periféricos
+        </button>
+
+        <button onclick="filtrarProductos('audio')">
+            Audio
+        </button>
+
+        <button onclick="filtrarProductos('cables')">
+            Cables
+        </button>
+
+        <button onclick="filtrarProductos('almacenamiento')">
+            Almacenamiento
+        </button>
+
+        <button onclick="filtrarProductos('energia')">
+            Energía
+        </button>
+
+        <button onclick="filtrarProductos('movil')">
+            Móvil
+        </button>
+
+    </div>
+
+
+    <!-- PRODUCTOS -->
+
+    <div
+        id="productosGrid"
+        class="products-grid"
+    ></div>
+
+</section>
+
+<!-- =====================================================
+     BANNER COMERCIAL
+===================================================== -->
+
+<section class="commercial-banner">
+
+    <div class="commercial-image">
+
+        <img
+            src="https://urbansupplyplus.com/cdn/shop/collections/ChatGPT_Image_Nov_30_2025_11_27_20_AM.png?v=1764522386"
+            alt="Accesorios tecnológicos"
+            loading="lazy"
+        >
+
+    </div>
+
+
+    <div class="commercial-content">
+
+        <span>
+            SOLUCIONES TI
+        </span>
+
+        <h2>
+            ¿No sabes qué accesorio necesitas?
+        </h2>
+
+        <p>
+
+            Cuéntanos qué equipo tienes y qué
+            necesitas solucionar. Nuestro equipo
+            puede orientarte antes de realizar
+            tu compra.
+
+        </p>
+
+
+        <a
+            href="https://wa.me/573012041255?text=Hola%20Innovent%20Servicios%20TI,%20necesito%20asesor%C3%ADa%20para%20elegir%20un%20accesorio%20tecnol%C3%B3gico."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="whatsapp-button"
+        >
+
+            Hablar con un asesor
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     BENEFICIOS
+===================================================== -->
+
+<section
+    id="beneficios"
+    class="benefits"
+>
+
+    <div class="benefit-card">
+
+        <span>
+            01
+        </span>
+
+        <h3>
+            Asesoría tecnológica
+        </h3>
+
+        <p>
+            Te ayudamos a elegir accesorios
+            compatibles con tus equipos.
+        </p>
+
+    </div>
+
+
+    <div class="benefit-card">
+
+        <span>
+            02
+        </span>
+
+        <h3>
+            Compra por WhatsApp
+        </h3>
+
+        <p>
+            Agrega tus productos al carrito
+            y envía tu pedido directamente.
+        </p>
+
+    </div>
+
+
+    <div class="benefit-card">
+
+        <span>
+            03
+        </span>
+
+        <h3>
+            Atención personalizada
+        </h3>
+
+        <p>
+            Confirmamos disponibilidad,
+            precio y condiciones del pedido.
+        </p>
+
+    </div>
+
+
+    <div class="benefit-card">
+
+        <span>
+            04
+        </span>
+
+        <h3>
+            Soporte TI
+        </h3>
+
+        <p>
+            No solamente vendemos tecnología:
+            también podemos ayudarte a utilizarla.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACTO
+===================================================== -->
+
+<section
+    id="contacto"
+    class="contact-section"
+>
+
+    <span>
+        INNOVENT SERVICIOS TI
+    </span>
+
+
+    <h2>
+        Tecnología que impulsa
+        tu experiencia
+    </h2>
+
+
+    <p>
+
+        ¿Tienes una pregunta sobre un producto,
+        compatibilidad o disponibilidad?
+
+    </p>
+
+
+    <div class="contact-actions">
+
+        <a
+            href="https://wa.me/573012041255?text=Hola%20Innovent%20Servicios%20TI,%20quiero%20informaci%C3%B3n%20sobre%20sus%20accesorios%20tecnol%C3%B3gicos."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="whatsapp-button"
+        >
+
+            WhatsApp Business
+
+        </a>
+
+
+        <a
+            href="index.html"
+            class="secondary-button"
+        >
+
+            Volver al inicio
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CARRITO
+===================================================== -->
+
+<div
+    id="cartOverlay"
+    class="cart-overlay"
+    onclick="cerrarCarrito(event)"
+>
+
+
+    <aside
+        class="cart"
+        onclick="event.stopPropagation()"
+    >
+
+
+        <div class="cart-header">
+
+            <div>
+
+                <span>
+                    INNOVENT
+                </span>
+
+                <h2>
+                    Tu carrito
+                </h2>
+
+            </div>
+
+
+            <button
+                onclick="cerrarCarrito()"
+                aria-label="Cerrar carrito"
+            >
+
+                ×
+
+            </button>
+
+        </div>
+
+
+
+        <!-- PRODUCTOS DEL CARRITO -->
+
+        <div
+            id="cartItems"
+            class="cart-items"
+        >
+
+        </div>
+
+
+
+        <!-- RESUMEN -->
+
+        <div class="cart-summary">
+
+            <div class="cart-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="cartTotal">
+                    $0
+                </strong>
+
+            </div>
+
+
+            <p class="cart-note">
+
+                El pedido será enviado a WhatsApp
+                para confirmar disponibilidad,
+                entrega y forma de pago.
+
+            </p>
+
+
+            <button
+                class="checkout-button"
+                onclick="enviarPedidoWhatsApp()"
+            >
+
+                Finalizar pedido por WhatsApp
+
+            </button>
+
+
+            <button
+                class="clear-button"
+                onclick="vaciarCarrito()"
+            >
+
+                Vaciar carrito
+
+            </button>
+
+        </div>
+
+
+    </aside>
+
+</div>
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="js/accesorios.js"></script>
+
+
+</body>
+
+</html>
