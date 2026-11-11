@@ -1,0 +1,684 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Política de privacidad de Innovent Servicios TI y recursos sobre originalidad digital, prevención del plagio, derechos de autor y uso ético de la inteligencia artificial.">
+  <meta name="author" content="Innovent Servicios TI">
+  <meta name="robots" content="index, follow">
+  <title>Política de privacidad | Innovent Servicios TI</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    :root {
+      --bg: #050509;
+      --panel: #101019;
+      --purple: #c77dff;
+      --blue: #60a5fa;
+      --text: #f5f5fa;
+      --muted: #b2b2c1;
+      --border: rgba(255,255,255,.10);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    a { color: var(--purple); }
+
+    .topbar {
+      border-bottom: 1px solid var(--border);
+      background: #090910;
+    }
+
+    .container {
+      width: min(100% - 32px, 1000px);
+      margin: auto;
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    .brand strong, .brand span { display: block; }
+
+    .brand strong { letter-spacing: 2px; }
+
+    .brand span {
+      color: var(--purple);
+      font-size: .72rem;
+      letter-spacing: 1.5px;
+    }
+
+    .back-link {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .9rem;
+    }
+
+    .back-link:hover { color: var(--purple); }
+
+    .hero {
+      padding: 76px 0 50px;
+      text-align: center;
+      background:
+        radial-gradient(circle at top right, rgba(124,58,237,.17), transparent 40%),
+        linear-gradient(135deg, #080811, #050509);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 7px 14px;
+      border: 1px solid rgba(199,125,255,.3);
+      border-radius: 30px;
+      color: var(--purple);
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+
+    h1 {
+      margin: 22px 0 12px;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.15;
+    }
+
+    h1 span {
+      display: block;
+      background: linear-gradient(90deg, var(--purple), #8b5cf6, var(--blue));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 18px auto 0;
+      color: var(--muted);
+    }
+
+    .updated {
+      margin-top: 20px;
+      color: #88889a;
+      font-size: .85rem;
+    }
+
+    main { padding: 20px 0 70px; }
+
+    .notice {
+      padding: 20px;
+      margin: 0 0 28px;
+      border: 1px solid rgba(199,125,255,.25);
+      border-radius: 14px;
+      background: rgba(124,58,237,.07);
+      color: var(--muted);
+    }
+
+    .document {
+      padding: clamp(22px, 5vw, 42px);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: var(--panel);
+    }
+
+    h2 {
+      margin: 35px 0 12px;
+      font-size: 1.35rem;
+      line-height: 1.4;
+    }
+
+    h2:first-child { margin-top: 0; }
+
+    p, li { color: var(--muted); }
+
+    li { margin: 8px 0; }
+
+    strong { color: var(--text); }
+
+    .contact {
+      margin-top: 30px;
+      padding: 22px;
+      border-radius: 14px;
+      background: #171321;
+      overflow-wrap: anywhere;
+    }
+
+    .contact p { margin: 8px 0; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 26px 0;
+      color: var(--muted);
+      font-size: .85rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    footer a { text-decoration: none; }
+
+    @media(max-width:600px) {
+      .navbar { min-height: 70px; }
+      .back-link { font-size: .8rem; }
+      .hero { padding: 52px 0 35px; }
+      .document { border-radius: 15px; }
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+    }
+
+    /* ==========================================================
+       SECCIÓN EDUCATIVA: ORIGINALIDAD Y DERECHOS DE AUTOR
+       ========================================================== */
+    .originality-section {
+      margin-top: 32px;
+      padding: clamp(22px, 5vw, 42px);
+      border: 1px solid rgba(199,125,255,.24);
+      border-radius: 22px;
+      background:
+        radial-gradient(circle at top right, rgba(96,165,250,.08), transparent 35%),
+        linear-gradient(145deg, #101019, #0b0b13);
+    }
+
+    .originality-section .section-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 7px 13px;
+      border: 1px solid rgba(199,125,255,.32);
+      border-radius: 999px;
+      color: var(--purple);
+      font-size: .76rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .originality-section h2 {
+      margin-top: 20px;
+      font-size: clamp(1.55rem, 4vw, 2.25rem);
+      line-height: 1.25;
+    }
+
+    .originality-section .gradient-text {
+      background: linear-gradient(90deg, var(--purple), #8b5cf6, var(--blue));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .originality-section .intro {
+      max-width: 850px;
+      color: var(--muted);
+    }
+
+    .originality-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+
+    .originality-card {
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      background: rgba(255,255,255,.025);
+      min-width: 0;
+    }
+
+    .originality-card h3 {
+      margin: 0 0 10px;
+      color: var(--text);
+      font-size: 1.05rem;
+      line-height: 1.45;
+    }
+
+    .originality-card h3 i {
+      margin-right: 8px;
+      color: var(--purple);
+    }
+
+    .originality-card p {
+      margin-bottom: 0;
+    }
+
+    .originality-section .practice-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0;
+    }
+
+    .originality-section .practice-list li {
+      position: relative;
+      padding-left: 30px;
+      margin: 12px 0;
+    }
+
+    .originality-section .practice-list li::before {
+      content: "\\f00c";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      top: 2px;
+      color: #60a5fa;
+    }
+
+    .legal-note {
+      margin-top: 20px;
+      padding: 20px;
+      border-left: 3px solid var(--purple);
+      border-radius: 0 12px 12px 0;
+      background: rgba(124,58,237,.08);
+    }
+
+    .legal-note p {
+      margin-bottom: 0;
+    }
+
+    .originality-cta {
+      margin-top: 24px;
+      padding: 22px;
+      border: 1px solid rgba(96,165,250,.25);
+      border-radius: 15px;
+      background: linear-gradient(135deg, rgba(124,58,237,.13), rgba(96,165,250,.08));
+      text-align: center;
+    }
+
+    .originality-cta strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1.08rem;
+    }
+
+    .hashtag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 18px;
+    }
+
+    .hashtag-list a {
+      display: inline-block;
+      padding: 7px 10px;
+      border: 1px solid rgba(199,125,255,.22);
+      border-radius: 999px;
+      background: rgba(199,125,255,.06);
+      color: var(--purple);
+      font-size: .82rem;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+      transition: background .2s ease, border-color .2s ease;
+    }
+
+    .hashtag-list a:hover {
+      background: rgba(199,125,255,.14);
+      border-color: rgba(199,125,255,.55);
+    }
+
+    @media (max-width: 700px) {
+      .originality-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .originality-section {
+        border-radius: 15px;
+      }
+
+      .hashtag-list a {
+        font-size: .78rem;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container navbar">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Logo de Innovent Servicios TI">
+        <div>
+          <strong>INNOVENT</strong>
+          <span>SERVICIOS TI</span>
+        </div>
+      </a>
+      <a href="index.html" class="back-link">
+        <i class="fa-solid fa-arrow-left"></i> Volver al inicio
+      </a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">TRANSPARENCIA Y CONFIANZA</span>
+      <h1>Política de <span>privacidad</span></h1>
+      <p>
+        Conoce cómo Innovent Servicios TI recopila, utiliza, protege
+        y gestiona los datos personales relacionados con sus servicios
+        y canales digitales.
+      </p>
+      <div class="updated">Última actualización: 14 de octubre de 2026</div>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="notice">
+      Esta política describe las prácticas previstas para el tratamiento
+      de datos personales. Antes de publicarla, Innovent debe verificar
+      que el contenido corresponda a sus procesos reales, sus proveedores
+      tecnológicos y sus mecanismos de atención.
+    </div>
+
+    <article class="document">
+      <h2>1. Responsable del tratamiento</h2>
+      <p>
+        <strong>Innovent Servicios TI</strong> es la organización responsable
+        del tratamiento de los datos personales que recopile directamente
+        a través de sus canales de contacto, solicitudes comerciales y
+        prestación de servicios, en los casos en que actúe como responsable.
+      </p>
+      <p>
+        Correo de contacto:
+        <a href="mailto:innoventdesarrollodesoftware@gmail.com">
+          innoventdesarrollodesoftware@gmail.com
+        </a>.
+      </p>
+      <p>
+        Ubicación de referencia: Cartagena, Bolívar, Colombia.
+      </p>
+
+      <h2>2. Normativa aplicable</h2>
+      <p>
+        El tratamiento de datos personales se regirá por la legislación
+        colombiana aplicable, en particular la Ley Estatutaria 1581 de 2012,
+        el Decreto 1074 de 2015 y las demás disposiciones que las modifiquen,
+        complementen o sustituyan.
+      </p>
+
+      <h2>3. Datos que podemos recopilar</h2>
+      <p>Según el servicio solicitado, podemos recopilar:</p>
+      <ul>
+        <li>Datos de identificación y contacto, como nombre, teléfono y correo electrónico.</li>
+        <li>Información de empresas, emprendimientos o proyectos proporcionada voluntariamente.</li>
+        <li>Información técnica necesaria para diagnosticar o prestar soporte a equipos y sistemas.</li>
+        <li>Mensajes, solicitudes, cotizaciones y comunicaciones comerciales.</li>
+        <li>Datos técnicos de navegación, cuando existan herramientas de medición o registros en el sitio web.</li>
+      </ul>
+      <p>
+        No solicitamos información personal que no sea necesaria para la
+        finalidad correspondiente. El usuario debe evitar enviar contraseñas,
+        datos bancarios completos u otra información sensible por canales
+        no diseñados para recibirla.
+      </p>
+
+      <h2>4. Finalidades del tratamiento</h2>
+      <p>Los datos podrán utilizarse, según corresponda, para:</p>
+      <ul>
+        <li>Responder consultas, solicitudes y cotizaciones.</li>
+        <li>Coordinar diagnósticos, mantenimientos y soporte técnico.</li>
+        <li>Diseñar, desarrollar, implementar y mantener soluciones digitales.</li>
+        <li>Gestionar relaciones contractuales, facturación y obligaciones legales.</li>
+        <li>Informar sobre el avance de servicios contratados.</li>
+        <li>Enviar información comercial cuando exista autorización o una base jurídica válida.</li>
+        <li>Mejorar la seguridad, funcionamiento y experiencia del sitio web.</li>
+        <li>Atender requerimientos de autoridades competentes conforme a la ley.</li>
+      </ul>
+
+      <h2>5. Autorización del titular</h2>
+      <p>
+        Cuando la ley lo requiera, solicitaremos autorización previa,
+        expresa e informada para el tratamiento de los datos personales.
+        La autorización deberá poder consultarse y acreditarse conforme
+        a los requisitos legales aplicables.
+      </p>
+      <p>
+        El envío de un mensaje o la navegación por el sitio no se considerará,
+        por sí solo, autorización automática para recibir publicidad ni para
+        cualquier tratamiento ajeno a la solicitud realizada.
+      </p>
+
+      <h2>6. Uso de WhatsApp y otros proveedores</h2>
+      <p>
+        Los usuarios pueden comunicarse con Innovent mediante WhatsApp,
+        correo electrónico y redes sociales. Cada plataforma puede tratar
+        información conforme a sus propias políticas y condiciones.
+      </p>
+      <p>
+        Si utilizamos proveedores de alojamiento web, correo, formularios,
+        analítica, inteligencia artificial u otras herramientas tecnológicas,
+        los datos podrán ser tratados por ellos únicamente bajo las condiciones
+        y garantías que correspondan. Los proveedores concretos y sus
+        funciones deberán verificarse antes de publicar esta política.
+      </p>
+
+      <h2>7. Tratamiento mediante inteligencia artificial</h2>
+      <p>
+        Si una herramienta de inteligencia artificial procesa la información
+        enviada por el usuario para generar propuestas, contenidos o soluciones,
+        el tratamiento deberá limitarse a la finalidad informada. No deben
+        introducirse datos personales sensibles, credenciales ni información
+        confidencial de terceros en herramientas externas sin una base legítima
+        y las medidas de protección pertinentes.
+      </p>
+
+      <h2>8. Seguridad y conservación</h2>
+      <p>
+        Innovent deberá aplicar medidas técnicas, humanas y administrativas
+        razonables para prevenir el acceso no autorizado, la pérdida, la
+        alteración o la divulgación indebida de los datos.
+      </p>
+      <p>
+        Los datos se conservarán durante el tiempo necesario para cumplir
+        las finalidades informadas y las obligaciones legales o contractuales
+        aplicables. Cuando proceda, se eliminarán o anonimizarán de forma segura.
+      </p>
+
+      <h2>9. Derechos de los titulares</h2>
+      <p>De acuerdo con la legislación aplicable, el titular podrá:</p>
+      <ul>
+        <li>Conocer, actualizar y rectificar sus datos personales.</li>
+        <li>Solicitar prueba de la autorización otorgada, cuando corresponda.</li>
+        <li>Consultar el uso dado a sus datos.</li>
+        <li>Presentar consultas o reclamos sobre el tratamiento.</li>
+        <li>Solicitar la revocatoria de la autorización o la supresión de los datos cuando legalmente proceda.</li>
+        <li>Acceder gratuitamente a sus datos personales en los términos previstos por la ley.</li>
+        <li>Acudir ante la Superintendencia de Industria y Comercio, una vez agotado el trámite de consulta o reclamo exigible.</li>
+      </ul>
+
+      <h2>10. Cómo presentar consultas o reclamos</h2>
+      <p>
+        El titular puede enviar su solicitud al correo de contacto indicado
+        en esta página. Debe identificar el derecho que desea ejercer y aportar
+        la información necesaria para localizar los datos, evitando adjuntar
+        información excesiva.
+      </p>
+      <p>
+        Las consultas y reclamos se tramitarán dentro de los términos,
+        etapas y condiciones establecidos por la normativa colombiana.
+        Cuando sea necesario, Innovent podrá solicitar información adicional
+        para verificar la identidad del solicitante.
+      </p>
+
+      <h2>11. Cookies y navegación</h2>
+      <p>
+        El sitio puede utilizar cookies o tecnologías similares para funciones
+        esenciales, preferencias, seguridad o medición, si estas herramientas
+        se encuentran instaladas. Cuando la legislación lo exija, se informará
+        sobre ellas y se solicitará el consentimiento correspondiente.
+      </p>
+      <p>
+        El usuario puede administrar las cookies mediante la configuración
+        de su navegador. Deshabilitar determinadas cookies podría afectar
+        algunas funciones del sitio.
+      </p>
+
+      <h2>12. Datos de menores de edad</h2>
+      <p>
+        Los servicios digitales no están dirigidos específicamente a recopilar
+        datos de menores sin las garantías exigidas por la ley. Cuando un
+        tratamiento involucre a niños, niñas o adolescentes, deberán observarse
+        las reglas especiales aplicables y el respeto de sus derechos.
+      </p>
+
+      <h2>13. Cambios en esta política</h2>
+      <p>
+        Innovent podrá actualizar esta política para reflejar cambios legales,
+        operativos o tecnológicos. La versión vigente estará disponible en
+        esta página, con su fecha de actualización.
+      </p>
+
+      <div class="contact">
+        <h2>Contacto sobre privacidad</h2>
+        <p><strong>Innovent Servicios TI</strong></p>
+        <p><i class="fa-solid fa-envelope"></i>
+          <a href="mailto:ventasinnovent@gmail.com">ventasinnovent@gmail.com</a>
+        </p>
+        <p><i class="fa-solid fa-location-dot"></i> Cartagena, Bolívar, Colombia</p>
+      </div>
+    </article>
+
+    <section class="originality-section" aria-labelledby="originalidad-title">
+      <span class="section-kicker"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Cultura y responsabilidad digital</span>
+      <h2 id="originalidad-title">Originalidad que <span class="gradient-text">protege tu conocimiento</span></h2>
+
+      <p class="intro">
+        En un mundo donde la inteligencia artificial y las herramientas digitales transforman la manera de crear,
+        estudiar y compartir información, proteger la originalidad y respetar los derechos de autor es más importante que nunca.
+      </p>
+      <p class="intro">
+        En <strong>Innovent Servicios TI</strong> promovemos una cultura de responsabilidad digital, integridad académica
+        y uso consciente de la tecnología.
+      </p>
+
+      <div class="originality-grid">
+        <div class="originality-card">
+          <h3><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>¿Por qué prevenir el plagio?</h3>
+          <ul class="practice-list">
+            <li>Reconoce y cita correctamente las fuentes de información.</li>
+            <li>Respeta la autoría y el trabajo intelectual de otras personas.</li>
+            <li>Utiliza la inteligencia artificial de forma ética y transparente.</li>
+            <li>Verifica las similitudes textuales sin asumir que un porcentaje determina por sí solo la existencia de plagio.</li>
+            <li>Protege tus ideas y desarrolla contenido auténtico.</li>
+          </ul>
+        </div>
+
+        <div class="originality-card">
+          <h3><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i>Marco legal colombiano</h3>
+          <p>
+            La protección de los derechos de autor en Colombia se relaciona, entre otras normas, con la
+            <strong>Ley 23 de 1982</strong>, la <strong>Ley 44 de 1993</strong>, la <strong>Ley 1032 de 2006</strong>
+            y la <strong>Decisión Andina 351 de 1993</strong>.
+          </p>
+          <p>
+            La aplicación de estas disposiciones depende del contexto y de las circunstancias de cada caso.
+            Esta información es de carácter general y no constituye asesoría jurídica.
+          </p>
+        </div>
+
+        <div class="originality-card">
+          <h3><i class="fa-solid fa-robot" aria-hidden="true"></i>Inteligencia artificial responsable</h3>
+          <p>
+            La IA puede apoyar la investigación, la programación y la creación de contenido. Verifica sus resultados,
+            reconoce su uso cuando corresponda y cumple las normas de tu institución, cliente o plataforma.
+          </p>
+        </div>
+
+        <div class="originality-card">
+          <h3><i class="fa-solid fa-lightbulb" aria-hidden="true"></i>Innovar con integridad</h3>
+          <p>
+            La tecnología debe impulsar la creatividad, no reemplazar la integridad. Construir contenido propio,
+            citar las fuentes y respetar las licencias fortalece la confianza y la calidad de los proyectos digitales.
+          </p>
+        </div>
+      </div>
+
+      <div class="legal-note">
+        <strong><i class="fa-solid fa-book-open" aria-hidden="true"></i> Buenas prácticas digitales</strong>
+        <p>
+          Antes de publicar o entregar un trabajo, revisa las fuentes, comprueba los permisos de uso de textos e imágenes,
+          conserva las referencias y verifica los requisitos de atribución. Los detectores de similitud son herramientas
+          de apoyo: sus resultados requieren interpretación y no prueban por sí solos que exista o no plagio.
+        </p>
+      </div>
+
+      <div class="originality-cta">
+        <strong>Protege tus ideas. Cita tus fuentes. Crea con integridad.</strong>
+        <p>
+          <strong>Innovent Servicios TI</strong><br>
+          <em>Tecnología que impulsa tu experiencia.</em>
+        </p>
+        <p>Comparte esta información y contribuye a promover una cultura digital más ética, responsable y consciente.</p>
+      </div>
+
+      <h3>Comparte el mensaje</h3>
+      <div class="hashtag-list" aria-label="Hashtags de la publicación">
+        <a href="https://www.instagram.com/explore/tags/innoventserviciosti/" target="_blank" rel="noopener noreferrer">#InnoventServiciosTI</a>
+        <a href="https://www.instagram.com/explore/tags/originalidaddigital/" target="_blank" rel="noopener noreferrer">#OriginalidadDigital</a>
+        <a href="https://www.instagram.com/explore/tags/derechosdeautor/" target="_blank" rel="noopener noreferrer">#DerechosDeAutor</a>
+        <a href="https://www.instagram.com/explore/tags/antiplagio/" target="_blank" rel="noopener noreferrer">#Antiplagio</a>
+        <a href="https://www.instagram.com/explore/tags/integridadacademica/" target="_blank" rel="noopener noreferrer">#IntegridadAcadémica</a>
+        <a href="https://www.instagram.com/explore/tags/eticadigital/" target="_blank" rel="noopener noreferrer">#ÉticaDigital</a>
+        <a href="https://www.instagram.com/explore/tags/inteligenciaartificial/" target="_blank" rel="noopener noreferrer">#InteligenciaArtificial</a>
+        <a href="https://www.instagram.com/explore/tags/ciberseguridad/" target="_blank" rel="noopener noreferrer">#Ciberseguridad</a>
+        <a href="https://www.instagram.com/explore/tags/propiedadintelectual/" target="_blank" rel="noopener noreferrer">#PropiedadIntelectual</a>
+        <a href="https://www.instagram.com/explore/tags/transformaciondigital/" target="_blank" rel="noopener noreferrer">#TransformaciónDigital</a>
+        <a href="https://www.instagram.com/explore/tags/innovaciontecnologica/" target="_blank" rel="noopener noreferrer">#InnovaciónTecnológica</a>
+        <a href="https://www.instagram.com/explore/tags/colombia/" target="_blank" rel="noopener noreferrer">#Colombia</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Innovent Servicios TI.</span>
+      <div>
+        <a href="politicas.html">Política de privacidad</a>
+        &nbsp; | &nbsp;
+        <a href="terminos.html">Términos y condiciones</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
